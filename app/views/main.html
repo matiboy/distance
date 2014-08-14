@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <h3>Pings: <span ng-bind="pings"></span></h3>
+    <h3>Pongs: <span ng-bind="pongs"></span></h3>
+  </div>
+  <div ng-controller="FastNetworkCtrl">
+    <h2>Fast network</h2>
+    <h3>Fast pings: <span ng-bind="fiveHundredAndBelow"></span></h3>
+    <h3>Slow pings: <span ng-bind="higher"></span></h3>
+  </div>
+  <div ng-controller="SlowNetworkCtrl">
+    <h2>Slow network</h2>
+    <h3>Fast pings: <span ng-bind="twoThousandAndBelow"></span></h3>
+    <h3>Slow pings: <span ng-bind="higher"></span></h3>
+  </div>
+</div>
+<a href='/#/about'>About</a>
